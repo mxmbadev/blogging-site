@@ -75,6 +75,10 @@ a {
 }
 
 
+.text-area-h{
+  min-height: 200px;
+}
+
 .footer-container{
   margin-top: 2%;
 }
@@ -85,3 +89,4 @@ a {
 
 @import 'welcome';
 @import 'posts_projects';
+@import 'pygments';

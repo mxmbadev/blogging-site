@@ -2,8 +2,11 @@
   <div class="row" style="padding-bottom: 5%;">
     <div class="col-md-6 center-block">
       <h1 style="text-align: center;"><%= @post.title %></h1>
+      <p class="dates" style="text-align:center;"> <%= @post.created_at.strftime("%A, %B %d") %> </p>
+      <br>
       <hr>
-      <p><%= @post.content %></p>
+      <br>
+      <p><%= markdown @post.content %></p>
     </div>
     <div class="col-md-6 center-block">
       <a><%= link_to "Edit", edit_post_path(@post), {class: "btn btn-default"} %></a>
