@@ -1,5 +1,29 @@
-<h1><%= @post.title %></h1>
-<p><%= @post.content %></p>
+<div class="container">
+  <div class="row" style="padding-bottom: 5%;">
+    <div class="col-md-6 center-block">
+      <h1 style="text-align: center;"><%= @post.title %></h1>
+      <hr>
+      <p><%= @post.content %></p>
+    </div>
+    <div class="col-md-6 center-block">
+      <a><%= link_to "Edit", edit_post_path(@post), {class: "btn btn-default"} %></a>
+      <a><%= link_to "Delete", post_path(@post), method: :delete, data: { confirm: "Are you sure you want to delete this poor lonely post? If so HaHa poor post!" }, class: "btn btn-default" %></a>
+    </div>
+  </div>
+  <div class="row" style="padding-bottom: 5%;">
+    <hr style="width: 12%;">
+    <div class="col-sm-3 center-block" style="padding-top: 5%;">
+      <h4 style="text-align:center;">Share <%= @post.title %></h4>
+    </div>
+      <!-- Twitter -->
+    <div class="col-sm-6 center-block" style="text-align:center; padding-top: 3%;">
+      <a onclick="javascript:window.open('https://twitter.com/share?text=<%= @post.title %> by Brandon Espinoza - &amp;url=<%= url_for([@post, {only_path: false}]) %>', '_blank', 'width=800, height=500, top=200, left=300');void(0);" class="fa-padding"><i class="fa fa-twitter"></i></a>
+      <!-- Facebook -->
+      <a <a onclick="javascript:window.open('http://www.facebook.com/sharer.php?u=<%= url_for([@post, {only_path: false}]) %>', '_blank', 'width=800, height=500, top=200, left=300');void(0);" class="fa-padding"><i class="fa fa-facebook"></i></a>
+      <!-- Google + -->
+      <a onclick="javascript:window.open('https://plus.google.com/share?url=<%= url_for([@post, {only_path: false}]) %>', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-google-plus"></i></a>
 
-<a><%= link_to "Edit", edit_post_path(@post) %></a>
-<a><%= link_to "Delete", post_path(@post), method: :delete, data: { confirm: "Are you sure you want to delete this poor lonely post? If so HaHa poor post!" } %></a>
+
+    </div>
+  </div>
+</div>

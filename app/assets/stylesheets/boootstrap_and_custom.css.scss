@@ -1,5 +1,6 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "font-awesome";
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,700);
 
 $dark: #424652;
@@ -13,8 +14,39 @@ body{
   font-family: 'Raleway', sans-serif;
 }
 
+footer{
+  border-top: 1px solid $border;
+}
+
 h1, h2, h3, h4, h5, h6, p, ul, li{
   color: $dark;
+}
+
+hr{
+  border: 2px solid $highlight;
+  width: 25%;
+}
+a {
+  text-decoration: none;
+  color: $dark;
+  &:hover {
+    color: $highlight;
+  }
+}
+
+.fa{
+  font-size: 20px;
+  padding-right: 20px;
+}
+
+.dates {
+    font-size: .85em;
+    margin-bottom: 2em;
+    color: $light;
+  }
+.welcome-container{
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
 .navbar{
@@ -33,6 +65,22 @@ h1, h2, h3, h4, h5, h6, p, ul, li{
     }
   }
 }
+
+
+.center-block {
+  float: none;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.footer-container{
+  margin-top: 2%;
+}
+
+
+
 
 
 @import 'welcome';

@@ -1,0 +1,42 @@
+<div class="container welcome-container">
+  <div class="row">
+    <div class="col-md-4">
+      <h3>About</h3>
+      <hr align="left">
+      <p>Hello I am Brandon Espinoza. I am a designer and developer living in the Nashville, TN Area. I design stuff and build websites and web apps for the web. I am very passionate about my work. Every website i build is 
+a new challenge to build something unique and usable. I focus on every detail, everything matters to me. I also use the latest
+web technologies to create my websites. I don't just develop websites and web apps, but I also do some video editing and video effects.</p>
+    </div>
+
+    <div class="col-md-3 col-md-offset-1">
+      <h3>My Perspective</h3>
+      <hr align="left">
+
+      <div class="col-md-12">
+        <% @posts.each do |post| %>
+          <h3><a href="#"> <%= link_to post.title, post %></a></h3>
+          <p class="dates"> <%= post.created_at.strftime("%A, %b %d") %> </p>
+        <% end %>
+      </div>
+    </div>
+
+    <div class="col-md-3 col-md-offset-1">
+      <h3>Stuff I've Built</h3>
+      <hr align="left">
+      <div class="col-md-12">
+        <a href="#"><h3>Ecommerce Site</h3></a>
+        <p class="dates">Wednesday January 6th 2016</p>
+      </div>
+
+      <div class="col-md-12">
+        <a href="#"><h3>Blogging Site</h3></a>
+        <p class="dates">Wednesday January 6th 2016</p>
+      </div>
+
+      <div class="col-md-12">
+        <a href="#"><h3>Portfolio Site</h3></a>
+        <p class="dates">Wednesday January 6th 2016</p>
+      </div>
+    </div>
+  </div>
+</div>

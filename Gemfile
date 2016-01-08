@@ -24,6 +24,9 @@ gem 'jbuilder', '~> 2.0'
 # Add Bootstrap Framework for Styling of the App
 gem 'bootstrap-sass'
 
+# FontAwesome.io
+gem "font-awesome-rails"
+
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 

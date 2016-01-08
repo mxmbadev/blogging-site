@@ -1,25 +1,24 @@
-<%= form_for @post do |f| %>
-  <% if @post.errors.any?%>
-    <h2><%= pluralize(@post.errors.count, "error") %> prevented this post from saving:</h2>
-    <ul>
-      <% @post.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
+<div class="container">
+  <div class="row">
+    <%= form_for @post do |f| %>
+      <% if @post.errors.any?%>
+        <h2><%= pluralize(@post.errors.count, "error") %> prevented this post from saving:</h2>
+        <ul>
+          <% @post.errors.full_messages.each do |msg| %>
+            <li><%= msg %></li>
+          <%end%>
+        </ul>
       <%end%>
-    </ul>
-  <%end%>
+      <div class="form-group">
+        <label><%= f.label :title %></label>
+        <%= f.text_field :title, {class: 'form-control'}%>
+      </div>
 
-  <%= f.label :title %><br>
-  <%= f.text_field :title %>
-
-  <br>
-  <br>
-
-  <%= f.label :content, "Write your article here" %><br>
-  <%= f.text_area :content %>
-
-  <br>
-  <br>
-
-  <%= f.submit %>
-
-<% end %>
+      <div class="form-group">
+        <label><%= f.label :content %></label>
+        <%= f.text_area :content, {class: 'form-control'}%>
+      </div>
+      <button type="submit" class="btn btn-default">Submit</button>
+    <% end %>
+  </div>
+</div>
