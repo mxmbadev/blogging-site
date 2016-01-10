@@ -6,9 +6,9 @@
   </div>
 
   <div class="row">
-    <div class="col-md-10 center-block">
+    <div class="col-md-12 center-block">
       <% @posts.each do |post| %>
-        <div class="col-md-6 border">
+        <div class="col-md-4 border">
           <h1 style="text-align:center;"><a href=""><%= link_to post.title, post %></a></h1>
           <p class="dates" style="text-align:center;"><%= post.created_at.strftime('%A, %B %d') %></p>
           <hr style="width: 10%;">
@@ -19,28 +19,8 @@
   </div>
 
   <div class="row">
-    <div class="col-md-6 center-block">
-      <div class="col-sm-4 center-block">
-        <nav>
-          <ul class="pagination">
-            <li>
-              <a href="#" aria-label="Previous">
-                <span aria-hidden="true">&laquo;</span>
-              </a>
-            </li>
-            <li><a href="#">1</a></li>
-            <li><a href="#">2</a></li>
-            <!-- <li><a href="#">3</a></li>
-            <li><a href="#">4</a></li>
-            <li><a href="#">5</a></li> -->
-            <li>
-              <a href="#" aria-label="Next">
-                <span aria-hidden="true">&raquo;</span>
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </div>
+    <div class="col-md-12" style="text-align: center; padding-top: 50px;">
+      <%= will_paginate @posts %>
     </div>
   </div>
 </div>
