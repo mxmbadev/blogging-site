@@ -20,3 +20,17 @@ $border: #E9E9E9;
 // }
 
 
+.project_button{
+  background: $highlight;
+  color: $white;
+  text-decoration: none;
+  padding: 1em 2em;
+}
+
+.project_button:hover{
+  background: $highlight;
+  color: $white;
+  text-decoration: none;
+  padding: 1em 2em;
+}
+
