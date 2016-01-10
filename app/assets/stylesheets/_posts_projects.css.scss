@@ -1,4 +1,21 @@
+$dark: #424652;
+$white: #fff;
+$light: #9a9da4;
+$highlight: #8bc6db;
+$border: #E9E9E9;
+
 .fa-padding{
   padding-right: 25%;
   padding-top: 5%;
+}
+
+.page-titles{
+  text-align: center;
+  border-bottom: 1px solid $border;
+  padding: 0 0 3% 0;
+}
+
+.border{
+  border-left: 1px solid $highlight;
+  border-right: 1px solid $highlight;
 }

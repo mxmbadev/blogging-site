@@ -1,1 +1,46 @@
-hello world
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h3 class="page-titles">MY PERSPECTIVE</h3>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-10 center-block">
+      <% @posts.each do |post| %>
+        <div class="col-md-6 border">
+          <h1 style="text-align:center;"><a href=""><%= link_to post.title, post %></a></h1>
+          <p class="dates" style="text-align:center;"><%= post.created_at.strftime('%A, %B %d') %></p>
+          <hr style="width: 10%;">
+        </div>
+      <%end%>
+      <!-- <hr style="height: 100px; width: 2px;"> -->
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6 center-block">
+      <div class="col-sm-4 center-block">
+        <nav>
+          <ul class="pagination">
+            <li>
+              <a href="#" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+              </a>
+            </li>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <!-- <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li> -->
+            <li>
+              <a href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>
