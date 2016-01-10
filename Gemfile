@@ -32,11 +32,17 @@ gem 'redcarpet', '~> 3.2.2'
 # Syntax Highlighting
 gem 'pygments.rb', '~> 0.6.0'
 
+# Give a unique id to posts and projects
 gem 'friendly_id', '~> 5.1'
 
+# Pagination
 gem 'will_paginate', '~> 3.1'
 
+# Pagination with bootstrap
 gem 'bootstrap-will_paginate'
+
+# Gem for Contact Form
+gem 'mail_form', '~> 1.5', '>= 1.5.1'
 
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc

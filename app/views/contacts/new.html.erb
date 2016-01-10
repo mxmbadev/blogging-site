@@ -1,0 +1,38 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h3 class="page-titles">Why Not Say Hello</h3>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6 center-block">
+      <form style="padding: 40px 0 40px 0;">
+        <%= form_for @contact do |f| %>
+          <div class="form-group">
+            <%= f.label :name %>
+            <%= f.text_field :name, required: true, class: "form-control"  %>
+          </div>
+
+          <div class="form-group">
+            <%= f.label :email %>
+            <%= f.email_field :email, required: true, class: "form-control" %>
+          </div>
+
+          <div class="form-group">
+            <%= f.label :message %>
+            <%= f.text_area :message, as: :text, class: "form-control", :cols => "30", :placeholder => "Your Message", :rows => "10" %>
+          </div>
+
+          <div class="form-group hidden">
+            <%= f.label :nickname %>
+            <%= f.text_field :nickname, hint: 'leave this field blank' %>
+          </div>
+
+          <%= f.submit 'Yes! Send It!', class: " btn-default btn sendbtn" %>
+
+        <%end%>
+      </form>
+    </div>
+  </div>
+</div>
