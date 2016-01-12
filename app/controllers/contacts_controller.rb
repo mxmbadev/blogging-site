@@ -1,11 +1,10 @@
 class ContactsController < ApplicationController
-
   def new
     @contact = Contact.new
   end
 
   def create
-    @contact = Contact.new(params[:contact])
+    @contact = Contact.new(contacts_params)
     @contact.request = request
     if @contact.deliver
       flash.now[:error] = nil
@@ -15,4 +14,9 @@ class ContactsController < ApplicationController
     end
   end
 
+  private
+
+  def contacts_params
+    params.require(:contact).permit(:name, :email, :message)
+  end
 end
