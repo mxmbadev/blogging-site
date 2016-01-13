@@ -1,4 +1,7 @@
 class ContactsController < ApplicationController
+  before_filter do
+  @utf8_enforcer_tag_enabled = browser.ie?
+
   def new
     @contact = Contact.new
   end
