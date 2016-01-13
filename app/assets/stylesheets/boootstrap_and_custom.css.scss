@@ -85,6 +85,31 @@ a {
 
 
 
+//Email Contact Form
+.form-control{
+  border-radius: 0px;
+  }
+
+  .form-control:focus{
+    border-color: $highlight;
+  }
+
+  .sendbtn{
+    background: $highlight;
+    border: none;
+    color: $white;
+  }
+
+  .btn{
+    border-radius: 0;
+  }
+
+  .sendbtn:hover{
+    background: $white;
+    border: 1px solid $highlight;
+    color: $highlight;
+  }
+
 
 
 @import 'welcome';
