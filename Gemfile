@@ -44,6 +44,8 @@ gem 'bootstrap-will_paginate'
 # Gem for Contact Form
 gem 'mail_form', '~> 1.5', '>= 1.5.1'
 
+gem 'utf8_enforcer_workaround'
+
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 
