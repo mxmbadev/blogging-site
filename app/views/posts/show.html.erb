@@ -8,10 +8,15 @@
       <br>
       <p><%= markdown @post.content %></p>
     </div>
-    <div class="col-md-6 center-block">
-      <a><%= link_to "Edit", edit_post_path(@post), {class: "btn btn-default"} %></a>
-      <a><%= link_to "Delete", post_path(@post), method: :delete, data: { confirm: "Are you sure you want to delete this poor lonely post? If so HaHa poor post!" }, class: "btn btn-default" %></a>
-    </div>
+    <br>
+
+    <% if user_signed_in? %>
+      <div class="col-md-6 center-block admin-links">
+        <a><%= link_to "Edit", edit_post_path(@post), {class: "btn sendbtn"} %></a>
+        <a><%= link_to "Delete", post_path(@post), method: :delete, data: { confirm: "Are you sure you want to delete this poor lonely post? If so HaHa poor post!" }, class: "btn btn-danger" %></a>
+      </div>
+    <% end %>
+
   </div>
   <div class="row" style="padding-bottom: 5%;">
     <hr style="width: 12%;">
@@ -26,7 +31,7 @@
       <!-- Google + -->
       <a onclick="javascript:window.open('https://plus.google.com/share?url=<%= url_for([@post, {only_path: false}]) %>', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-google-plus"></i></a>
 
-    
+
     </div>
   </div>
 

@@ -1,24 +1,26 @@
 <div class="container">
   <div class="row">
-    <%= form_for @post do |f| %>
-      <% if @post.errors.any?%>
-        <h2><%= pluralize(@post.errors.count, "error") %> prevented this post from saving:</h2>
-        <ul>
-          <% @post.errors.full_messages.each do |msg| %>
-            <li><%= msg %></li>
-          <%end%>
-        </ul>
-      <%end%>
-      <div class="form-group">
-        <label><%= f.label :title %></label>
-        <%= f.text_field :title, {class: 'form-control'}%>
-      </div>
+    <div class="col-md-10 center-block" style="padding:40px 0 40px 0;">
+      <%= form_for @post do |f| %>
+        <% if @post.errors.any?%>
+          <h2><%= pluralize(@post.errors.count, "error") %> prevented this post from saving:</h2>
+          <ul>
+            <% @post.errors.full_messages.each do |msg| %>
+              <li><%= msg %></li>
+            <%end%>
+          </ul>
+        <%end%>
+        <div class="form-group">
+          <label><%= f.label :title %></label>
+          <%= f.text_field :title, {class: 'form-control'}%>
+        </div>
 
-      <div class="form-group">
-        <label><%= f.label :content %></label>
-        <%= f.text_area :content, {class: 'form-control text-area-h'}%>
-      </div>
-      <button type="submit" class="btn btn-default">Submit</button>
-    <% end %>
+        <div class="form-group">
+          <label><%= f.label :content %></label>
+          <%= f.text_area :content, {class: 'form-control text-area-h'}%>
+        </div>
+        <button type="submit" class="btn sendbtn">Submit</button>
+      <% end %>
+    </div>
   </div>
 </div>

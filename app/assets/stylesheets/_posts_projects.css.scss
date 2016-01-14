@@ -1,7 +1,7 @@
 $dark: #424652;
 $white: #fff;
 $light: #9a9da4;
-$highlight: #8bc6db;
+$highlight: #2A88E0;
 $border: #E9E9E9;
 
 .fa-padding{
@@ -33,4 +33,13 @@ $border: #E9E9E9;
   text-decoration: none;
   padding: 1em 2em;
 }
+
+.admin-links{
+  text-align: center;
+  border-top: 1px solid $border;
+  border-bottom: 1px solid $border;
+  padding: 1em 0;
+}
+
+
 
