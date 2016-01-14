@@ -26,13 +26,13 @@ hr{
   border: 2px solid $highlight;
   width: 25%;
 }
-a {
-  text-decoration: none;
+
+a{
   color: $dark;
-  &:hover {
-    color: $highlight;
-  }
 }
+
+
+
 
 // .navbar-nav li{
 //     border-bottom: 1px solid $highlight;
