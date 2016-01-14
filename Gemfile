@@ -41,6 +41,9 @@ gem 'bootstrap-will_paginate'
 #contact controller
 gem 'mail_form', '~> 1.5', '>= 1.5.1'
 
+# Authentication
+gem 'devise', '~> 3.5', '>= 3.5.3'
+
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 

@@ -6,7 +6,7 @@
 $dark: #424652;
 $white: #fff;
 $light: #9a9da4;
-$highlight: #8bc6db;
+$highlight: #2A88E0;
 $border: #E9E9E9;
 
 
@@ -92,6 +92,7 @@ a {
 
   .form-control:focus{
     border-color: $highlight;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px $highlight;
   }
 
   .sendbtn{
@@ -109,6 +110,14 @@ a {
     border: 1px solid $highlight;
     color: $highlight;
   }
+
+
+//Login Form
+
+.loginbtn{
+  background: $highlight;
+  color: $white;
+}
 
 
 
