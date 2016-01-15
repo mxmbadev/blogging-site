@@ -8,7 +8,7 @@
   <div class="row">
     <div class="col-md-12 center-block">
       <% @posts.each do |post| %>
-        <div class="col-md-4 border">
+        <div class="col-md-12 border">
           <h1 style="text-align:center;"><a href=""><%= link_to post.title, post %></a></h1>
           <p class="dates" style="text-align:center;"><%= post.created_at.strftime('%A, %B %d') %></p>
           <hr style="width: 10%;">

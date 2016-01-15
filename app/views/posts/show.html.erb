@@ -1,6 +1,6 @@
 <div class="container">
-  <div class="row" style="padding-bottom: 5%;">
-    <div class="col-md-6 center-block">
+  <div class="row">
+    <div class="col-md-10 panel center-block wow fadeInDown" style="margin-top: 5%;">
       <h1 style="text-align: center;"><%= @post.title %></h1>
       <p class="dates" style="text-align:center;"> <%= @post.created_at.strftime("%A, %B %d") %> </p>
       <br>
@@ -11,7 +11,7 @@
     <br>
 
     <% if user_signed_in? %>
-      <div class="col-md-6 center-block admin-links">
+      <div class="col-md-6 center-block admin-links wow fadeInDown">
         <a><%= link_to "Edit", edit_post_path(@post), {class: "btn sendbtn"} %></a>
         <a><%= link_to "Delete", post_path(@post), method: :delete, data: { confirm: "Are you sure you want to delete this poor lonely post? If so HaHa poor post!" }, class: "btn btn-danger" %></a>
       </div>
@@ -20,7 +20,7 @@
   </div>
   <div class="row" style="padding-bottom: 5%;">
     <hr style="width: 12%;">
-    <div class="col-sm-3 center-block" style="padding-top: 5%;">
+    <div class="col-sm-3 center-block wow fadeInDown" style="padding-top: 5%;">
       <h4 style="text-align:center;">Share <%= @post.title %></h4>
     </div>
       <!-- Twitter -->
@@ -36,7 +36,7 @@
   </div>
 
   <div class="row">
-    <div class="col-md-6 center-block">
+    <div class="col-md-10 panel center-block">
       <%= render 'disqus' %>
     </div>
   </div>

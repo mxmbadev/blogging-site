@@ -37,19 +37,27 @@ a:hover{
   text-decoration: none;
 }
 
-.navbar-nav li > a {
-  color: $dark;
-  margin-right: 20px;
+.navbar-default .navbar-nav > li > a{
+  color: $white;
+}
+
+.navbar-default .navbar-nav > li > a:hover{
+  color: $white;
+}
+
+nav.navbar, .navbar-default{
+  background-color: $highlight;
 }
 
 .navbar-nav li > a {
   position: relative;
-  color: #000;
+  color: $white;
   text-decoration: none;
+  margin-right: 20px;
 }
 
 .navbar-nav li > a:hover {
-  color: #000;
+  color: $white;
 }
 
 .navbar-nav li > a:before {
@@ -59,7 +67,7 @@ a:hover{
   height: 1px;
   bottom: 0;
   left: 0;
-  background-color: $highlight;
+  background-color: $white;
   visibility: hidden;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
@@ -89,6 +97,27 @@ a:hover{
 //     margin-right: -6px;
 // }
 
+
+
+.navbar{
+  min-height: 150px;
+  background-color: $white;
+  border-bottom: 1px solid $border;
+  .container-fluid{
+    padding-top: 3%;
+    padding-left: 5%;
+    .navbar-brand{
+      border: 1px solid $white;
+      font-family: 'Raleway 700', sans-serif;
+      letter-spacing: 3px;
+      color: $white;
+      font-size: 13px;
+    }
+  }
+}
+
+//Welcome#index
+
 .notice, .alert{
   text-align: center;
   padding: 1em 0;
@@ -110,23 +139,26 @@ a:hover{
   padding-bottom: 5%;
 }
 
-.navbar{
-  min-height: 150px;
-  background-color: $white;
-  border-bottom: 1px solid $border;
-  .container-fluid{
-    padding-top: 3%;
-    padding-left: 5%;
-    .navbar-brand{
-      border: 1px solid $border;
-      font-family: 'Raleway 700', sans-serif;
-      letter-spacing: 3px;
-      color: $dark;
-      font-size: 13px;
-    }
-  }
+.panel{
+  border: 1px solid $border;
+  box-shadow: 0 5px 10px $border;
+  border-radius: 0;
 }
 
+
+
+//
+
+//Pagination
+.pagination{
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+.pagination > .active > a{
+  background-color: $highlight;
+}
 
 .center-block {
   float: none;
@@ -143,6 +175,8 @@ a:hover{
 .footer-container{
   margin-top: 2%;
 }
+
+// Post#show
 
 
 

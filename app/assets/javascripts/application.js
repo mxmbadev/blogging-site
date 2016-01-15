@@ -19,13 +19,17 @@
 
 
 $(document).ready(function(){
-  if(location.href == "http://www.espinozabrand.com/" || location.href == "http://espinozabrand.com/")
-  {
-    $('.navbar-brand').addClass('animated flipInX')
-  }
+  // if(location.href == "http://www.espinozabrand.com/" || location.href == "http://espinozabrand.com/")
+  // {
+  //   $('.navbar-brand').addClass('animated flipInX')
+  // }
 
   animateHover('.navbar-brand', 'flipInX');
-  animateHover('.fa', 'hinge');
+  animateHover('.fa-twitter', 'hinge');
+  animateHover('.fa-facebook', 'hinge');
+  animateHover('.fa-google-plus', 'hinge');
+  animateHover('.fa-linkedin-square', 'hinge');
+  animateHover('.fa-github', 'hinge');
 
   //Animate on hover Function
   function animateHover(element, animation){

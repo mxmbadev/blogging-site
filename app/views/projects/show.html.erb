@@ -1,6 +1,6 @@
 <div class="container">
-  <div class="row" style="padding-bottom: 5%;">
-    <div class="col-md-6 center-block">
+  <div class="row">
+    <div class="col-md-6 center-block panel wow fadeInDown" style="margin-top: 5%;">
       <h1 style="text-align: center;"><%= @project.title %></h1>
       <p class="dates" style="text-align:center;"> <%= @project.created_at.strftime("%A, %B %d") %> </p>
       <br>
@@ -9,15 +9,11 @@
       <p><%= markdown @project.description %></p>
       <br>
     </div>
-  </div>
-  <div class="row">
+    <br>
     <div class="col-md-12" style="text-align:center;">
       <a href="<%= @project.link %>" class="project_button" target="_blank">Visit <%= @project.title %></a>
     </div>
-    <br>
-    <br>
-    <br>
-
+  </div>
     <% if user_signed_in? %>
       <div class="col-md-3 center-block admin-links" style="padding-top: 20px;">
         <a><%= link_to "Edit", edit_project_path(@project), {class: "btn sendbtn"} %></a>
