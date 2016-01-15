@@ -47,6 +47,9 @@ gem 'devise', '~> 3.5', '>= 3.5.3'
 # Animate.css
 gem 'animate.css-rails', '~> 3.2'
 
+# WOW.js
+gem 'wow-rails', '~> 0.0.1'
+
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 

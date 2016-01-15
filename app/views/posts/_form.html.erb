@@ -1,6 +1,6 @@
 <div class="container">
   <div class="row">
-    <div class="col-md-10 center-block" style="padding:40px 0 40px 0;">
+    <div class="col-md-10 center-block wow fadeIn" data-wow-duration="3s" style="padding:40px 0 40px 0;">
       <%= form_for @post do |f| %>
         <% if @post.errors.any?%>
           <h2><%= pluralize(@post.errors.count, "error") %> prevented this post from saving:</h2>
