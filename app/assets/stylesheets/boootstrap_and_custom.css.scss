@@ -7,7 +7,7 @@
 $dark: #424652;
 $white: #fff;
 $light: #9a9da4;
-$highlight: #2A88E0;
+$highlight: #F5A313;
 $border: #E9E9E9;
 
 
@@ -15,12 +15,27 @@ body{
   font-family: 'Raleway', sans-serif;
 }
 
+#bg{
+  background-image: url('/assets/bg2.jpg');
+  position: relative;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.main-cont{
+  padding: 0;
+  box-shadow: 0px 0px 25px #000;
+}
+
 footer{
   border-top: 1px solid $border;
 }
 
 h1, h2, h3, h4, h5, h6, p, ul, li{
-  color: $dark;
+  color: $white;
 }
 
 hr{
@@ -29,11 +44,11 @@ hr{
 }
 
 a{
-  color: $dark;
+  color: $white;
 }
 
 a:hover{
-  color: $dark;
+  color: $white;
   text-decoration: none;
 }
 
@@ -103,6 +118,7 @@ nav.navbar, .navbar-default{
   min-height: 150px;
   background-color: $white;
   border-bottom: 1px solid $border;
+  border-radius: 0;
   .container-fluid{
     padding-top: 3%;
     padding-left: 5%;
@@ -114,6 +130,12 @@ nav.navbar, .navbar-default{
       font-size: 13px;
     }
   }
+}
+
+footer p{
+  color: $white;
+}.fa{
+  color: $white;
 }
 
 //Welcome#index
@@ -132,7 +154,7 @@ nav.navbar, .navbar-default{
 .dates {
     font-size: .85em;
     margin-bottom: 2em;
-    color: $light;
+    color: $white;
   }
 .welcome-container{
   padding-top: 5%;
@@ -140,11 +162,25 @@ nav.navbar, .navbar-default{
 }
 
 .panel{
-  border: 1px solid $border;
-  box-shadow: 0 5px 10px $border;
+  padding: 2em;
+  border: none;
+  box-shadow: 0 5px 15px #000;
   border-radius: 0;
+  background: none;
 }
 
+.panel p {
+  color: $white;
+  font-size: 15px;
+}
+
+.panel h1, h3, a {
+  color: $white;
+}
+.panel a:hover{
+  color: $white;
+  text-decoration: none;
+}
 
 
 //
@@ -180,14 +216,28 @@ nav.navbar, .navbar-default{
 
 
 
-//Email Contact Form
+//ALL Forms
+
+
 .form-control{
+  background: none;
+  border: none;
+  box-shadow: 0 0px 10px 3px white;
   border-radius: 0px;
-  }
+  color: $white;
+}
+label{
+  color: $white;
+}
+
+
+
+
+//Email Contact Form
 
   .form-control:focus{
     border-color: $highlight;
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px $highlight;
+    box-shadow: 0 0px 10px 3px $highlight;
   }
 
   .sendbtn{
