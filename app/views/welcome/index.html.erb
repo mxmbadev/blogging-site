@@ -1,20 +1,80 @@
-<div class="container welcome-container">
-  <div class="row">
-    <div class="col-md-10 center-block panel wow fadeInDown">
-      <h3>About</h3>
-      <hr align="left">
-      <p class="wow fadeInDown">Hello I am Brandon Espinoza. I am a designer and developer living in the Nashville, TN Area. I design stuff and build websites and web apps for the web. I am very passionate about my work. Every website i build is
-a new challenge to build something unique and usable. I focus on every detail, everything matters to me. I also use the latest
-web technologies to create my websites. I don't just develop websites and web apps, but I also do some video editing and video effects.</p>
+<div class="container">
+  <div class="col-md-12 welcome-margin no-padding">
+    <div class="col-md-6">
+      <h1 class="welcome-header wow fadeInDown">Hello <span class="comma">,</span></h1>
+    </div>
+    <div class="col-md-6">
+      <p class="welcome-p wow fadeInDown">Hello I am Brandon Espinoza. I am a designer and developer living in the Nashville, TN Area. I design stuff and build websites and web apps for the web. I am very passionate about my work. Every website i build is a new challenge to build something unique and usable. I focus on every detail, everything matters to me. I also use the latest web technologies to create my websites. I don't just develop websites and web apps, but I also do some video editing and video effects.</p>
     </div>
   </div>
+</div>
 
+<div class="container-fluid welcome-container">
   <div class="row">
-    <div class="col-md-10 center-block">
-      <div class="col-md-6 panel wow fadeInLeft">
-        <h3>My Perspective</h3>
+    <div class="container">
+      <div class="col-md-6">
+        <h2 class="section-titles"><span style="font-weight: bold;">.01 </span>Skillset</h2>
+        <p class="section-subtitles">Tools I Use The Most In My Projects</p>
+        <br>
+        <p class="progress-title">HTML</p>
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
+          </div>
+        </div>
+        <p class="progress-title">CSS</p>
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
+          </div>
+        </div>
+        <p class="progress-title">JavaScript</p>
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+          </div>
+        </div>
+        <p class="progress-title">Ruby on Rails</p>
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+          </div>
+        </div>
+        <p class="progress-title">Twitter Bootstrap</p>
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
+          </div>
+        </div>
+        <p class="progress-title">Zurb Foundation</p>
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
+          </div>
+        </div>
+        <p class="progress-title">Github</p>
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
+          </div>
+        </div>
+        <p class="progress-title">Heroku</p>
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+          </div>
+        </div>
+        <p class="progress-title">Adobe Photoshop</p>
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 85%;">
+          </div>
+        </div>
+        <p class="progress-title">Adobe Premiere Pro</p>
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+          </div>
+        </div>
+        <p class="progress-title">Adobe Lightroom</p>
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-5 col-md-offset-1 wow fadeInLeft">
+        <h2 class="section-titles"><span style="font-weight: bold;">.02 </span>My Perspective</h2>
         <hr align="left">
-
         <div class="col-md-12 wow fadeInLeft">
           <% @posts.each do |post| %>
             <h3><a><%= link_to post.title, post %></a></h3>
@@ -22,9 +82,8 @@ web technologies to create my websites. I don't just develop websites and web ap
           <% end %>
         </div>
       </div>
-
-      <div class="col-md-5 panel col-md-offset-1 wow fadeInRight">
-        <h3>My Projects</h3>
+      <div class="col-md-5 col-md-offset-1 wow fadeInRight">
+        <h2 class="section-titles"><span style="font-weight: bold;">.03 </span>My Projects</h2>
         <hr align="left">
 
         <div class="col-md-12 wow fadeInRight">
