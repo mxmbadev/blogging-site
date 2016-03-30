@@ -1,0 +1,71 @@
+$dark: #424652;
+$white: #fff;
+$light: #9a9da4;
+$blue: #009FFF;
+$border: #E9E9E9;
+
+
+.navbar-default .navbar-nav > li > a{
+  color: $blue;
+}
+
+.navbar-default .navbar-nav > li > a:hover{
+  color: $blue;
+}
+
+nav.navbar, .navbar-default{
+  background-color: $white;
+}
+
+.navbar-nav li > a {
+  position: relative;
+  color: $blue;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.navbar-nav li > a:hover {
+  color: $blue;
+}
+
+.navbar-nav li > a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: $blue;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.navbar-nav li > a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+
+.navbar{
+  min-height: 50px;
+  border-right: none;
+  background-color: $blue;
+  border-bottom: 1px solid $border;
+  border-radius: 0;
+  .container{
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 2%;
+    .navbar-brand{
+      border: 1px solid $blue;
+      font-family: 'Raleway 700', sans-serif;
+      letter-spacing: 3px;
+      color: $blue;
+      font-size: 13px;
+    }
+  }
+}

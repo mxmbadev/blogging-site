@@ -7,7 +7,7 @@
 $dark: #424652;
 $white: #fff;
 $light: #9a9da4;
-$highlight: #F5A313;
+$blue: #009FFF;
 $border: #E9E9E9;
 
 
@@ -15,31 +15,21 @@ body{
   font-family: 'Raleway', sans-serif;
 }
 
-#bg{
-  background-image: url('/assets/bg2.jpg');
-  position: relative;
-  width: 100%;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
 
-.main-cont{
-  padding: 0;
-  box-shadow: 0px 0px 25px #000;
-}
 
 footer{
   border-top: 1px solid $border;
 }
 
-h1, h2, h3, h4, h5, h6, p, ul, li{
-  color: $white;
+h1, h2, h3, h4, h5, h6, ul, li{
+  color: #000;
+}
+p{
+  color: #000;
 }
 
 hr{
-  border: 2px solid $highlight;
+  border: 2px solid $blue;
   width: 25%;
 }
 
@@ -48,140 +38,21 @@ a{
 }
 
 a:hover{
-  color: $white;
+  color: $blue;
   text-decoration: none;
 }
 
-.navbar-default .navbar-nav > li > a{
-  color: $white;
-}
-
-.navbar-default .navbar-nav > li > a:hover{
-  color: $white;
-}
-
-nav.navbar, .navbar-default{
-  background-color: $highlight;
-}
-
-.navbar-nav li > a {
-  position: relative;
-  color: $white;
-  text-decoration: none;
-  margin-right: 20px;
-}
-
-.navbar-nav li > a:hover {
-  color: $white;
-}
-
-.navbar-nav li > a:before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 1px;
-  bottom: 0;
-  left: 0;
-  background-color: $white;
-  visibility: hidden;
-  -webkit-transform: scaleX(0);
-  transform: scaleX(0);
-  -webkit-transition: all 0.3s ease-in-out 0s;
-  transition: all 0.3s ease-in-out 0s;
-}
-
-.navbar-nav li > a:hover:before {
-  visibility: visible;
-  -webkit-transform: scaleX(1);
-  transform: scaleX(1);
+a:hover{
+  transition: color .6s ease-in-out;
 }
 
 
-// .navbar-nav li{
-//     border-bottom: 1px solid $highlight;
-//     margin-right: 80px;
-//     width: 0px;
-//     -webkit-transition: 0.5s ease;
-//             transition: 0.5s ease;
-// }
-// .navbar-nav li:hover{
-//     -webkit-transition: 0.5s ease;
-//             transition: 0.5s ease;
-//     border-bottom: 1px solid blue;
-//     width: 30px;
-//     margin-right: -6px;
-// }
-
-
-
-.navbar{
-  min-height: 150px;
-  background-color: $white;
-  border-bottom: 1px solid $border;
-  border-radius: 0;
-  .container-fluid{
-    padding-top: 3%;
-    padding-left: 5%;
-    .navbar-brand{
-      border: 1px solid $white;
-      font-family: 'Raleway 700', sans-serif;
-      letter-spacing: 3px;
-      color: $white;
-      font-size: 13px;
-    }
-  }
-}
 
 footer p{
   color: $white;
 }.fa{
-  color: $white;
+  color: $blue;
 }
-
-//Welcome#index
-
-.notice, .alert{
-  text-align: center;
-  padding: 1em 0;
-  border-bottom: 1px solid $border;
-}
-
-.fa{
-  font-size: 20px;
-  padding-right: 20px;
-}
-
-.dates {
-    font-size: .85em;
-    margin-bottom: 2em;
-    color: $white;
-  }
-.welcome-container{
-  padding-top: 5%;
-  padding-bottom: 5%;
-}
-
-.panel{
-  padding: 2em;
-  border: none;
-  box-shadow: 0 5px 15px #000;
-  border-radius: 0;
-  background: none;
-}
-
-.panel p {
-  color: $white;
-  font-size: 15px;
-}
-
-.panel h1, h3, a {
-  color: $white;
-}
-.panel a:hover{
-  color: $white;
-  text-decoration: none;
-}
-
 
 //
 
@@ -193,7 +64,7 @@ footer p{
   border-bottom-left-radius: 0px;
 }
 .pagination > .active > a{
-  background-color: $highlight;
+  background-color: $blue;
 }
 
 .center-block {
@@ -236,12 +107,12 @@ label{
 //Email Contact Form
 
   .form-control:focus{
-    border-color: $highlight;
-    box-shadow: 0 0px 10px 3px $highlight;
+    border-color: $blue;
+    box-shadow: 0 0px 10px 3px $blue;
   }
 
   .sendbtn{
-    background: $highlight;
+    background: $blue;
     border: none;
     color: $white;
   }
@@ -252,15 +123,15 @@ label{
 
   .sendbtn:hover{
     background: $white;
-    border: 1px solid $highlight;
-    color: $highlight;
+    border: 1px solid $blue;
+    color: $blue;
   }
 
 
 //Login Form
 
 .loginbtn{
-  background: $highlight;
+  background: $blue;
   color: $white;
 }
 
@@ -269,3 +140,4 @@ label{
 @import 'welcome';
 @import 'posts_projects';
 @import 'pygments';
+@import 'nav';
