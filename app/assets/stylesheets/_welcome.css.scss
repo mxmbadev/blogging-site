@@ -1,0 +1,83 @@
+$dark: #424652;
+$white: #fff;
+$light: #9a9da4;
+$blue: #009FFF;
+$border: #E9E9E9;
+
+.welcome-margin{
+  margin-top: 25%;
+}
+
+.welcome-header{
+  font-size: 70px;
+  color: #000;
+  .comma{
+    color: $blue;
+  }
+}
+
+.welcome-p{
+  color: #000;
+}
+
+.no-padding{
+  padding-left: 0;
+  padding-right: 0;
+}
+
+//Welcome#index
+
+.notice, .alert{
+  text-align: center;
+  padding: 1em 0;
+  border-bottom: 1px solid $border;
+}
+
+.fa{
+  font-size: 20px;
+  padding-right: 20px;
+}
+
+.dates {
+    font-size: .85em;
+    margin-bottom: 2em;
+    color: $blue;
+  }
+.welcome-container{
+  margin-top: 15%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  background: #171717;
+}
+
+.section-titles{
+  color: $white;
+  font-weight: 100;
+  letter-spacing: 3px;
+}
+
+.section-subtitles{
+  color: $blue;
+}
+
+// Progress Bars SKILLSET
+
+.progress{
+  height: 5px;
+  border-radius: 0;
+  .progress-bar{
+    background-color: $blue;
+  }
+}
+
+.progress-title{
+  font-size: 18px;
+  color: $blue;
+}
+
+
+// footer
+
+.footer-links{
+  color: $blue;
+}
