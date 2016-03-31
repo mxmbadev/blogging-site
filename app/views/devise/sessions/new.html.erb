@@ -1,11 +1,17 @@
 <div class="container">
   <div class="row">
-    <div class="col-md-12">
-      <h3 class="page-titles">Log In</h3>
+    <div class="col-md-12 page-titles no-padding">
+      <div class="col-md-8">
+        <h1 class="welcome-header title wow fadeInDown">My Log In <span class="comma">,</span></h1>
+      </div>
+      <div class="col-md-4">
+        <h1 class="perspective-p wow fadeInDown">And Not Yours  ... </h1>
+        <p class="wow fadeInDown">unless you hire me to make you a wbesite like mine.</p>
+      </div>
     </div>
   </div>
   <div class="row">
-    <div class="col-sm-6 center-block" style="padding-bottom: 40px;">
+    <div class="col-sm-6 center-block" style="padding-top: 40px; padding-bottom: 40px;">
       <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
         <div class="form-group">
           <label><%= f.label :email %></label>

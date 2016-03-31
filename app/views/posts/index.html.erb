@@ -1,7 +1,13 @@
-<div class="container">
+<div class="container ">
   <div class="row">
-    <div class="col-md-12">
-      <h3 class="page-titles">MY PERSPECTIVE</h3>
+    <div class="col-md-12 page-titles no-padding">
+      <div class="col-md-8">
+        <h1 class="welcome-header title wow fadeInDown">My Perspective <span class="comma">,</span></h1>
+      </div>
+      <div class="col-md-4">
+        <h1 class="perspective-p wow fadeInDown">The Way I See "Hello World"</h1>
+        <p class="wow fadeInDown">... and other stuff.</p>
+      </div>
     </div>
   </div>
 
@@ -9,9 +15,9 @@
     <div class="col-md-12 center-block">
       <% @posts.each do |post| %>
         <div class="col-md-12 border">
-          <h1 style="text-align:center;"><a href=""><%= link_to post.title, post %></a></h1>
-          <p class="dates" style="text-align:center;"><%= post.created_at.strftime('%A, %B %d') %></p>
-          <hr style="width: 10%;">
+          <h1 class="wow fadeInUp blog-title" style="text-align:center;"><a href=""><%= link_to post.title, post, class: "blog-name" %></a></h1>
+          <p class=" wow fadeInUp dates" style="text-align:center;"><%= post.created_at.strftime('%A, %B %d') %></p>
+          <hr class="wow fadeInUp" style="width: 10%;">
         </div>
       <%end%>
       <!-- <hr style="height: 100px; width: 2px;"> -->

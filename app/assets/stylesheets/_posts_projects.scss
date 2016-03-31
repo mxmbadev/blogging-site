@@ -1,8 +1,10 @@
-$dark: #424652;
+$dark: #171717;
 $white: #fff;
 $light: #9a9da4;
-$highlight: #2A88E0;
+$blue: #009FFF;
 $border: #E9E9E9;
+
+
 
 .fa-padding{
   padding-right: 25%;
@@ -10,25 +12,46 @@ $border: #E9E9E9;
 }
 
 .page-titles{
-  text-align: center;
+  // text-align: center;
   border-bottom: 1px solid $border;
-  padding: 0 0 3% 0;
+  padding:8% 0 10% 0;
 }
 
+.title{
+  font-size: 80px;
+}
+
+// .perspective-p{
+//   font-size: 30px;
+// }
+
+.blog-name{
+  color: #000;
+  text-decoration: none;
+}
+
+.blog-name:hover{
+  color: $blue;
+  transition: color .4s ease-in;
+  text-decoration: none;
+}
 // .border{
 //   border-right: 1px solid $highlight;
 // }
 
+.blog-title{
+  padding-top: 5%;
+}
 
 .project_button{
-  background: $highlight;
+  background: $blue;
   color: $white;
   text-decoration: none;
   padding: 1em 2em;
 }
 
 .project_button:hover{
-  background: $highlight;
+  background: $blue;
   color: $white;
   text-decoration: none;
   padding: 1em 2em;

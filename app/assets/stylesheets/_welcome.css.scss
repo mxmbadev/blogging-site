@@ -5,11 +5,12 @@ $blue: #009FFF;
 $border: #E9E9E9;
 
 .welcome-margin{
-  margin-top: 25%;
+  margin-top: 20%;
+  padding-bottom: 10%;
 }
 
 .welcome-header{
-  font-size: 70px;
+  font-size: 100px;
   color: #000;
   .comma{
     color: $blue;
@@ -24,6 +25,20 @@ $border: #E9E9E9;
   padding-left: 0;
   padding-right: 0;
 }
+
+.welcome-links{
+  color: $white;
+}
+
+.welcome-links:hover{
+  color: $blue;
+  text-decoration: none;
+}
+
+.welcome-links:hover{
+  transition: color .6s ease-in-out;
+}
+
 
 //Welcome#index
 
@@ -79,5 +94,10 @@ $border: #E9E9E9;
 // footer
 
 .footer-links{
+  color: $dark;
+}
+
+.footer-links:hover{
   color: $blue;
+  transition: color .3s ease-in-out;
 }
