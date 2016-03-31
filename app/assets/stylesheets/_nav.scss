@@ -77,10 +77,10 @@ nav.navbar, .navbar-default{
     }
     .navbar-brand:hover{
       border: 1px solid;
-      border-color: $white;
+      border-color: $dark;
       font-family: 'Raleway 700', sans-serif;
       letter-spacing: 3px;
-      color: $white;
+      color: $dark;
       font-size: 13px;
       transition: border-color .6s ease-in-out, color .6s ease-in-out;
       -webkit-transition: border-color .6s ease-in-out, color .6s ease-in-out;
@@ -100,3 +100,28 @@ nav.second-navbar-default{
   border-bottom: 1px solid $border;
   border-radius: 0;
 }
+
+nav.navbar .container .navbar-brand.second-nav-brand{
+    border: 1px solid;
+    border-color: $blue;
+    font-family: 'Raleway 700', sans-serif;
+    letter-spacing: 3px;
+    color: $blue;
+    font-size: 13px;
+    transition: border-color .6s ease-in-out, color .6s ease-in-out;
+    -webkit-transition: border-color .6s ease-in-out, color .6s ease-in-out;
+    -moz-transition: border-color .6s ease-in-out, color .6s ease-in-out;
+    -o-transition: border-color .6s ease-in-out, color .6s ease-in-out;
+  }
+nav.navbar .container .navbar-brand.second-nav-brand:hover{
+    border: 1px solid;
+    border-color: $white;
+    font-family: 'Raleway 700', sans-serif;
+    letter-spacing: 3px;
+    color: $white;
+    font-size: 13px;
+    transition: border-color .6s ease-in-out, color .6s ease-in-out;
+    -webkit-transition: border-color .6s ease-in-out, color .6s ease-in-out;
+    -moz-transition: border-color .6s ease-in-out, color .6s ease-in-out;
+    -o-transition: border-color .6s ease-in-out, color .6s ease-in-out;
+  }
