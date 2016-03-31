@@ -38,14 +38,17 @@ nav.navbar, .navbar-default{
   background-color: $blue;
   visibility: hidden;
   -webkit-transform: scaleX(0);
+  -moz-transform: scaleX(0);
   transform: scaleX(0);
   -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
   transition: all 0.3s ease-in-out 0s;
 }
 
 .navbar-nav li > a:hover:before {
   visibility: visible;
   -webkit-transform: scaleX(1);
+  -moz-transform: scaleX(1);
   transform: scaleX(1);
 }
 
@@ -61,11 +64,28 @@ nav.navbar, .navbar-default{
     padding-bottom: 1%;
     padding-left: 2%;
     .navbar-brand{
-      border: 1px solid $blue;
+      border: 1px solid;
+      border-color: $blue;
       font-family: 'Raleway 700', sans-serif;
       letter-spacing: 3px;
       color: $blue;
       font-size: 13px;
+      transition: border-color .6s ease-in-out, color .6s ease-in-out;
+      -webkit-transition: border-color .6s ease-in-out, color .6s ease-in-out;
+      -moz-transition: border-color .6s ease-in-out, color .6s ease-in-out;
+      -o-transition: border-color .6s ease-in-out, color .6s ease-in-out;
+    }
+    .navbar-brand:hover{
+      border: 1px solid;
+      border-color: $white;
+      font-family: 'Raleway 700', sans-serif;
+      letter-spacing: 3px;
+      color: $white;
+      font-size: 13px;
+      transition: border-color .6s ease-in-out, color .6s ease-in-out;
+      -webkit-transition: border-color .6s ease-in-out, color .6s ease-in-out;
+      -moz-transition: border-color .6s ease-in-out, color .6s ease-in-out;
+      -o-transition: border-color .6s ease-in-out, color .6s ease-in-out;
     }
   }
 }
