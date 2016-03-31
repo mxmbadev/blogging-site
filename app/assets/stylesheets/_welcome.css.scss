@@ -26,6 +26,20 @@ $border: #E9E9E9;
   padding-right: 0;
 }
 
+.welcome-links{
+  color: $white;
+}
+
+.welcome-links:hover{
+  color: $blue;
+  text-decoration: none;
+}
+
+.welcome-links:hover{
+  transition: color .6s ease-in-out;
+}
+
+
 //Welcome#index
 
 .notice, .alert{
