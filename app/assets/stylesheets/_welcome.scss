@@ -102,6 +102,11 @@ $border: #E9E9E9;
   float: left;
 }
 
+.footer-name{
+  color: $dark;
+  float: left;
+}
+
 .footer-links:hover{
   color: $blue;
   transition: color .3s ease-in-out;

@@ -24,6 +24,10 @@
 @media (max-width: 650px){
   .footer-links{
     float: left;
-    padding-right: 5%;
+    padding-right: 6%;
+  }
+  .footer-name{
+    text-align: center;
+    float: none;
   }
 }
