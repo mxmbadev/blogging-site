@@ -77,7 +77,7 @@
         <hr align="left">
         <div class="col-md-12 wow fadeInLeft">
           <% @posts.each do |post| %>
-            <h3><a><%= link_to post.title, post %></a></h3>
+            <h3><a><%= link_to post.title, post, class: "welcome-links" %></a></h3>
             <p class="dates"> <%= post.created_at.strftime("%A, %b %d") %> </p>
           <% end %>
         </div>
@@ -88,7 +88,7 @@
 
         <div class="col-md-12 wow fadeInRight">
           <% @projects.each do |project| %>
-            <h3><a> <%= link_to project.title, project %></a></h3>
+            <h3><a> <%= link_to project.title, project, class: "welcome-links" %></a></h3>
             <p class="dates"> <%= project.created_at.strftime("%A, %b %d") %> </p>
           <% end %>
         </div>

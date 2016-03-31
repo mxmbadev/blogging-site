@@ -9,7 +9,7 @@
     <div class="col-md-12 center-block">
       <% @projects.each do |project| %>
         <div class="col-md-4 border">
-          <h1 style="text-align:center;"><a href=""><%= link_to project.title, project %></a></h1>
+          <h1 style="text-align:center;"><%= link_to project.title, project, class: "blog-name" %></h1>
           <p class="dates" style="text-align:center;"><%= project.created_at.strftime('%A, %B %d') %></p>
           <hr style="width: 10%;">
         </div>

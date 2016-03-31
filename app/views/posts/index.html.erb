@@ -1,7 +1,7 @@
 <div class="container">
   <div class="row">
     <div class="col-md-12">
-      <h3 class="page-titles">MY PERSPECTIVE</h3>
+      <h3 class="page-titles">My Perspective</h3>
     </div>
   </div>
 
@@ -9,7 +9,7 @@
     <div class="col-md-12 center-block">
       <% @posts.each do |post| %>
         <div class="col-md-12 border">
-          <h1 style="text-align:center;"><a href=""><%= link_to post.title, post %></a></h1>
+          <h1 style="text-align:center;"><a href=""><%= link_to post.title, post, class: "blog-name" %></a></h1>
           <p class="dates" style="text-align:center;"><%= post.created_at.strftime('%A, %B %d') %></p>
           <hr style="width: 10%;">
         </div>

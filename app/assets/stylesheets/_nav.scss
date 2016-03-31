@@ -1,4 +1,4 @@
-$dark: #424652;
+$dark: #171717;
 $white: #fff;
 $light: #9a9da4;
 $blue: #009FFF;
@@ -68,4 +68,15 @@ nav.navbar, .navbar-default{
       font-size: 13px;
     }
   }
+}
+
+
+// Second NavBar
+
+nav.second-navbar-default{
+  min-height: 50px;
+  border-right: none;
+  background-color: $dark;
+  border-bottom: 1px solid $border;
+  border-radius: 0;
 }
