@@ -94,5 +94,10 @@ $border: #E9E9E9;
 // footer
 
 .footer-links{
+  color: $dark;
+}
+
+.footer-links:hover{
   color: $blue;
+  transition: color .3s ease-in-out;
 }
