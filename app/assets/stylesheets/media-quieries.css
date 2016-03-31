@@ -15,7 +15,6 @@
     padding-top: 30px;
   }
   .footer-links{
-    color: $dark;
     float: left;
     padding-right: 8%;
   }
@@ -24,7 +23,6 @@
 
 @media (max-width: 650px){
   .footer-links{
-    color: $dark;
     float: left;
     padding-right: 5%;
   }
