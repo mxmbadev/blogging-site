@@ -13,6 +13,8 @@
 //= require jquery
 //= require bootstrap-sprockets
 //= require wow
+//= require particles.js
+//= require particulas.js
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .

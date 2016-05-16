@@ -1,9 +1,11 @@
 <div class="container-fluid home-bg">
-  <div class="row" style="margin-top: 25vh;">
-    <div class="col-md-12 center-block">
-      <img src="assets/logo.png" alt="" class="logo wow fadeInDown"> <!-- flipInX -->
+
+  <div id="particles-js"></div>
+  <div class="row" style="margin-top: 30vh;">
+    <div class="col-md-6 center-block">
+      <img src="assets/logo.png" alt="" class="logo wow fadeInDown">
     </div>
-    <div class="col-md-12" style="margin-top: 10vh;">
+    <div class="col-md-12" style="margin-top: 15vh;">
       <div class="col-md-3 wow fadeInUp">
         <a href="<%= welcome_index_path %>" class="btn btn-home">Photography</a>
       </div>
@@ -19,3 +21,6 @@
     </div>
   </div>
 </div>
+
+<%= javascript_include_tag 'particles' %>
+<%= javascript_include_tag 'particulas' %>
