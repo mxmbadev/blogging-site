@@ -63,4 +63,17 @@ $(document).ready(function(){
     }
   );
   wow.init();
+
+
+  // $(function(){
+  //   $(".smoke1").on({
+  //    mouseenter: function(){
+  //     $(this).attr('src','assets/smoke/smoke1-1.png');
+  //   },
+  //   mouseleave: function(){
+  //     $(this).attr('src','assets/smoke/smoke1.png');
+  //   }
+  //   });
+    
+  // });
 })
