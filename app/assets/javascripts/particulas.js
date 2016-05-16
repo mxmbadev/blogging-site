@@ -26,7 +26,7 @@ particlesJS('particles-js',
         "value": "#039be5"
       },
       "shape": {
-        "type": "circle",
+        "type": ["polygon", "image"],
         "stroke": {
           "width": 0,
           "color": "#000000"
@@ -35,7 +35,7 @@ particlesJS('particles-js',
           "nb_sides": 5
         },
         "image": {
-          "src": "img/github.svg",
+          "src": "assets/sqaure.png",
           "width": 100,
           "height": 100
         }
@@ -61,15 +61,15 @@ particlesJS('particles-js',
         }
       },
       "line_linked": {
-        "enable": false,
+        "enable": true,
         "distance": 150,
         "color": "#039be5",
-        "opacity": 0.4,
+        "opacity": 1,
         "width": 1
       },
       "move": {
         "enable": true,
-        "speed": 6,
+        "speed": 3,
         "direction": "none",
         "random": false,
         "straight": false,
