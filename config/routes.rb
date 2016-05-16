@@ -4,8 +4,11 @@ Rails.application.routes.draw do
   resources :posts
   resources :projects
   resources :contacts, only: [:new, :create]
-  get 'welcome/index'
-  root 'welcome#index'
+
+  resources :welcome
+
+  get 'home/home'
+  root 'home#home'
 
   get '*path' => redirect('/')
 end
