@@ -13,7 +13,7 @@
     <% if user_signed_in? %>
       <div class="col-md-6 center-block admin-links wow fadeInDown">
         <a><%= link_to "Edit", edit_post_path(@post), {class: "btn sendbtn"} %></a>
-        <%= link_to "Delete2", project_path(@post), method: :delete, data: { confirm: "Are you sure you want to delete this poor lonely project? If so HaHa poor project!" }, class: "btn btn-danger" %>
+        <%= link_to "Delete2", post_path(@post), method: :delete, data: { confirm: "Are you sure you want to delete this poor lonely project? If so HaHa poor project!" }, class: "btn btn-danger" %>
         <%= link_to "Delete", post_path(@post), method: :delete, data: { confirm: "Are you sure you want to delete this poor lonely post? If so HaHa poor post!" }, class: "btn btn-danger" %>
       </div>
     <% end %>
